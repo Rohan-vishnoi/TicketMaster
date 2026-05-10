@@ -74,4 +74,7 @@ ticket-booking-platform/
     │   └── models/               # JPA Entities (Event, Seat, Booking)
     └── src/main/resources/
         └── application.yml       # DB connection pool, Redis host
+
+## Scaling Strategy (Future-Proofing)
+Modular Monolith: Built currently as a single application, but structured cleanly so that it can be broken into independent microservices (e.g., separating the Queue Service from the Payment Service) as traffic demands grow.
 ```
